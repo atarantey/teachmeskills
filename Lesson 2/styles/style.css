@@ -89,6 +89,10 @@ hr.green-bg {
     padding: 20px 0;
 }
 
+.prescription:hover {
+    color: red;
+}
+
 .description {
     font-family: Open Sans;
     font-style: normal;
@@ -111,4 +115,22 @@ hr.green-bg {
 
 .icon-txt.keyboard img {
     margin: auto;
+}
+
+div.city-image {
+    position: relative;
+    background: url('../image/city.jpeg') center center no-repeat;
+    height: 320px;
+}
+
+div.city-image:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+    content: "";
+    width: 100%;
 }

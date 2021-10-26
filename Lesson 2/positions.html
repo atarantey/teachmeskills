@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .pos-fixed {
+                background-color: red;
+                height: 100px;
+                width: 100%;
+                position: fixed;
+                top:100px;
+                z-index: 10;
+            }
+
+            .pos-abs {
+                background-color: green;
+                /*height: 100px;*/
+                width: 100%;
+                position: absolute;
+                top:10px; 
+                z-index:15;
+            }
+
+            .pos-rel {
+                background-color: blue;
+                height: 100px;
+                width: 100%;
+                position: relative;
+                top:150px; 
+                z-index:12; 
+            }
+
+            .pos-inside-rel {
+                position: inherit;
+                height: 30px;
+                background-color: aqua;
+                z-index:13;
+                top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pos-fixed">asa</div>
+        <div class="pos-abs">ssddas</div>
+        <div class="pos-rel">
+            <div class="pos-inside-rel">ssddas</div>
+        </div>
+        <div class="boxed"><!-- 
+
+
+            If you want to use Lorem Ipsum within another program please contact us for details
+            on our API rather than parse the HTML below, we have XML and JSON available.
+            
+            
+             --><div id="lipsum">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut massa molestie, commodo nunc consequat, pharetra nulla. In hac habitasse platea dictumst. Etiam luctus lacinia felis, ac ullamcorper felis placerat nec. Aliquam sit amet augue in quam elementum fringilla. Vivamus porta ornare metus, non elementum augue lacinia sit amet. Ut tristique elementum pellentesque. Cras lobortis vitae sapien non ornare. Ut suscipit scelerisque egestas. Nullam libero ex, euismod non efficitur ut, sollicitudin quis libero. Sed faucibus risus quis augue vulputate, nec ultrices urna lacinia. Sed quis condimentum libero.
+            </p>
+            <p>
+            Morbi rutrum orci non arcu accumsan tincidunt ut id eros. Donec pellentesque molestie ipsum, quis pretium augue faucibus nec. Sed iaculis lorem vitae ipsum blandit, quis fermentum velit tempus. Integer bibendum tortor est, non posuere leo porttitor quis. Ut tincidunt aliquam velit, eu porttitor ligula eleifend eu. Nullam ac enim quis sapien dignissim bibendum sed non nisi. Proin et magna massa. Nulla in neque sit amet orci porta gravida. Aliquam erat volutpat. Pellentesque vehicula leo vitae augue fringilla consequat. Quisque rutrum purus in quam semper semper. Duis sagittis iaculis tincidunt. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <p>
+            Integer sem urna, ultrices eu dolor a, tristique feugiat risus. Etiam non ligula vitae nibh maximus lobortis. Nunc in lectus libero. Pellentesque aliquet imperdiet malesuada. Suspendisse potenti. Aenean tortor ipsum, aliquam et dapibus in, varius ut mi. Nullam condimentum et dui et maximus. Proin sit amet tortor mi. Etiam suscipit, quam quis posuere varius, lectus metus posuere dolor, quis ultrices elit augue quis nulla.
+            </p>
+            <p>
+            Praesent diam libero, luctus et elit vel, porttitor convallis lacus. Maecenas a volutpat elit. Morbi finibus imperdiet nunc. Proin imperdiet, purus eget mollis condimentum, risus ligula ornare ipsum, quis convallis orci lorem interdum felis. Nunc nunc dolor, scelerisque id arcu et, vestibulum lacinia eros. Sed porta odio id venenatis ullamcorper. Nunc iaculis eu mauris eget feugiat. Phasellus eleifend odio eget cursus tincidunt. Suspendisse id luctus lectus, et mattis mauris. Nulla finibus mattis lacinia. Proin scelerisque bibendum ornare. Maecenas gravida eros neque, sed euismod nunc mattis quis. Etiam rhoncus diam nec velit interdum, id venenatis elit semper. Pellentesque lobortis quam libero, ac efficitur tellus condimentum eu. Pellentesque vehicula hendrerit massa, sed sodales neque cursus sit amet.
+            </p>
+            <p>
+            Pellentesque dictum eros quam, nec pretium turpis sollicitudin id. Etiam sit amet dignissim orci, eu tincidunt libero. Sed id orci auctor, dignissim arcu a, viverra nisl. Phasellus ullamcorper non ex id euismod. Etiam rutrum eros metus, eu varius augue laoreet sed. Nunc velit augue, aliquet eu lectus non, finibus mattis eros. Cras pharetra fringilla nulla, sodales sollicitudin nunc condimentum vitae. Aliquam hendrerit nisi a tellus auctor finibus. Mauris facilisis pulvinar pulvinar.
+            </p></div>
+            <div id="generated">Generated 5 paragraphs, 439 words, 3023 bytes of <a href="https://www.lipsum.com/" title="Lorem Ipsum">Lorem Ipsum</a></div>
+            </div>
+    </body>
+</html>
