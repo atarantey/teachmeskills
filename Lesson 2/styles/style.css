@@ -181,3 +181,31 @@ padding: 10px 0;
     display: block;
     margin: auto;
 }
+
+.tabs-box .tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-box .tabs > a {
+    display: block;
+    background-color:#333333;
+    width: 112px;
+    height: 112px;
+    margin: 10px 20px 10px 0;
+    order: 0;
+}
+
+.tabs-box .tabs > a:hover {
+    background-color:  #EC7979;
+}
+
+.tabs-box .tabs-text-container div:nth-child(n+2) {
+    display: none;
+    order: 1;
+}
+
+.tabs-box .tabs-text-container>div:target {
+    display: block;
+}
+
