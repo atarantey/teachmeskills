@@ -144,10 +144,18 @@ div.city-image:after {
     width: 100%;
 }
 
+.price-block {
+    padding: 50px 0 30px;
+}
+
 .price-list {
     list-style-type: none;
-    
 }
+
+.price-block  div:nth-child(2) {
+    margin-top: -20px;
+}
+
 
 .price-list li {
     height: 40px;
