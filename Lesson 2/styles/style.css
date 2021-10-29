@@ -181,3 +181,53 @@ padding: 10px 0;
     display: block;
     margin: auto;
 }
+
+.tabs-box .tabs {
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-box .row > input[type="radio"] {
+    display: none;
+}
+
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+.tabs-box .row #tab-btn-1:checked ~ div.tabs-text-container #text-block-1,
+.tabs-box .row #tab-btn-2:checked ~ div.tabs-text-container #text-block-2,
+.tabs-box .row #tab-btn-3:checked ~ div.tabs-text-container #text-block-3 {
+    display: block;
+}
+
+.tabs-box .tabs-container .tabs > label {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #333333;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+
+.tabs-box .row > #tab-btn-1:checked ~ .tabs-container label[for="tab-btn-1"],
+.tabs-box .row > #tab-btn-2:checked ~ .tabs-container label[for="tab-btn-2"],
+.tabs-box .row > #tab-btn-3:checked ~ .tabs-container label[for="tab-btn-3"] {
+    background-color: #EC7979;
+}
+    /* скрыть контент по умолчанию */
+
+.tabs-box .tabs-text-container div {
+    display: none;
+    border: 1px solid #e0e0e0;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
